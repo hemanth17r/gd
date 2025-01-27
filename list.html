@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="name">Enter your name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="description">Describe yourself:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <label>Select your gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="hobbies">Select your hobbies:</label><br>
+        <select id="hobbies" name="hobbies[]" multiple size="4" required>
+            <option value="reading">Reading</option>
+            <option value="sports">Sports</option>
+            <option value="traveling">Traveling</option>
+            <option value="music">Music</option>
+            <option value="gaming">Gaming</option>
+        </select><br><br>
+
+        <label for="dob">Enter your date of birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
